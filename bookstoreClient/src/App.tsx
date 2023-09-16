@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { Store } from "./pages/Store";
 import { BookDetail } from "./pages/BookDetail";
 import { Checkout } from "./pages/Checkout";
+import { Success } from "./pages/Success";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="store/:pageNumber" element={<Store />} />
         <Route path="bookdetail/:id" element={<BookDetail />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
     </>
   );
