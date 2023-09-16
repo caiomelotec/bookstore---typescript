@@ -37,6 +37,11 @@
 .checkout-img-item {
   width: 250px;
 }
+.checkoutitem-info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 @media screen and (max-width: 768px) {
   /* Adjust styles for small screens here */
