@@ -5,6 +5,7 @@ import "../styles/CheckoutItem.css";
 import { useShoppingCart } from "../contex/ShoppingCartContext";
 import { useState } from "react";
 import { formatCurrency } from "../ultilities/formatCurrency";
+import { Link } from "react-router-dom";
 
 type CartItemsProps = {
   id: string;
@@ -44,14 +45,18 @@ export const CheckoutItem = ({
       <div className="checkout-item-container">
         <div className="checkout-img-and-info">
           <div className="img-div-checkout">
-            <img
-              src={checkoutItem?.imgUrl}
-              className="checkout-img-item"
-              alt=""
-            />
+            <Link to={`/bookdetail/${checkoutItem?.id}`}>
+              <img
+                src={checkoutItem?.imgUrl}
+                className="checkout-img-item"
+                alt=""
+              />
+            </Link>
           </div>
           <div className="checkoutitem-info-div">
-            <h2 className="checkoutitem-title">{checkoutItem?.title}</h2>
+            <Link to={`/bookdetail/${checkoutItem?.id}`}>
+              <h2 className="checkoutitem-title">{checkoutItem?.title}</h2>
+            </Link>
             <p className="checkoutitem-author">{checkoutItem?.author}</p>
             <div className="checkout-delivery">
               <span className="delivery-span">Delivery</span>
