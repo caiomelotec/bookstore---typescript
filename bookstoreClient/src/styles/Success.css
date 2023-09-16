@@ -1,0 +1,30 @@
+.success-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.success-img {
+  width: 300px;
+}
+.success-btn {
+  background-color: white;
+  border: solid 4px rgb(9, 181, 9);
+  padding: 14px 20px;
+  color: rgb(9, 181, 9);
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.success-btn:hover {
+  background-color: rgb(9, 181, 9);
+  color: white;
+}
+.success-h2,
+.success-h1 {
+  color: black;
+}
