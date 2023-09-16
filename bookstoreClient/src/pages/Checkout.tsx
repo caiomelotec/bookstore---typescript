@@ -1,6 +1,6 @@
 import { CheckoutItem } from "../components/CheckoutItem";
 import { useShoppingCart } from "../contex/ShoppingCartContext";
-import StripeIMG from "../../public/img/stripeimg.png";
+import StripeIMG from "../assets/stripeimg.png";
 import "../styles/Checkout.css";
 import { formatCurrency } from "../ultilities/formatCurrency";
 import books from "../data/fakebooks.json";
