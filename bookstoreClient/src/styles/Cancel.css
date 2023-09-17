@@ -1,0 +1,22 @@
+.fail-btn {
+  background-color: white;
+  border: solid 4px red;
+  padding: 14px 20px;
+  color: red;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fail-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.p-fail {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2em;
+}
