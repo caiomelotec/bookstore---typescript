@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+/* Rest of your CSS code goes here */
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+
 * {
   padding: 0;
   margin: 0;
@@ -9,10 +14,4 @@
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
   color: white;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    height: 700px;
-  }
 }

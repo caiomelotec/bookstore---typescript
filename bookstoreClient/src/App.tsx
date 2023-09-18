@@ -8,6 +8,8 @@ import { Checkout } from "./pages/Checkout";
 import { Success } from "./pages/Success";
 import { Cancel } from "./pages/Cancel";
 
+import "./index.css";
+
 function App() {
   return (
     <>
