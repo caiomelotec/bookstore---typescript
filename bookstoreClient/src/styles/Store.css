@@ -16,6 +16,12 @@
   width: 300px;
   height: 300px;
   object-fit: contain;
+  transition: 0.3s;
+}
+
+.book-img-store:hover {
+  transform: scale(1.12);
+  cursor: pointer;
 }
 
 .store-container span {
