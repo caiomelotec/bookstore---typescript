@@ -28,6 +28,8 @@ nav a {
 }
 
 .h1-logo {
+  font-size: 2em;
+  font-weight: bold;
   cursor: pointer;
 }
 
