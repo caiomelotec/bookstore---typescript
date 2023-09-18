@@ -66,6 +66,7 @@ export const Checkout = () => {
                 type="submit"
                 onClick={handleCheckout}
                 className="checkout-btn"
+                id="checkout-btn"
               >
                 CHECKOUT
               </button>
