@@ -109,17 +109,17 @@
     gap: 1rem;
   }
   .stripe {
-    width: 200px;
+    width: 300px;
     justify-content: center;
+    align-items: center;
   }
   .stripe img {
-    width: 400px;
+    object-fit: cover;
     margin-left: 12rem;
   }
   .payment-div {
     width: 200px;
     align-items: center;
-    justify-content: center;
   }
   .total-payment-div {
     width: 300px;
