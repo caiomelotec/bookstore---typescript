@@ -9,6 +9,7 @@ import { Success } from "./pages/Success";
 import { Cancel } from "./pages/Cancel";
 
 import "./index.css";
+import { Modal } from "./components/Modal";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/success" element={<Success />} />
         <Route path="/cancel" element={<Cancel />} />
       </Routes>
+      <Modal />
     </>
   );
 }
