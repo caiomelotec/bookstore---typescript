@@ -118,7 +118,7 @@ export const Header = () => {
           onClick={() => {
             setToggle(false);
           }}
-          to="/store"
+          to="/store/1"
         >
           Store
         </Link>
