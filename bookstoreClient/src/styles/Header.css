@@ -21,7 +21,7 @@ nav a {
 .search-icon {
   position: absolute;
   right: -0.3rem;
-  top: -0.2rem;
+  top: -0.1rem;
   padding: 0.5rem 0;
   color: black;
   background-color: black;
@@ -84,8 +84,7 @@ nav a {
     margin-top: 2.2rem;
     margin-right: 0.3rem;
   }
-  .warenkorb-icon {
-  }
+
   .logo-and-input-div {
     display: block;
   }
