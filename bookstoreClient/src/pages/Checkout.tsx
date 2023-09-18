@@ -4,6 +4,7 @@ import StripeIMG from "../assets/stripeimg.png";
 import "../styles/Checkout.css";
 import { formatCurrency } from "../ultilities/formatCurrency";
 import books from "../data/fakebooks.json";
+import { Link } from "react-router-dom";
 
 export const Checkout = () => {
   const { cartItems, clearCart } = useShoppingCart();
@@ -35,42 +36,54 @@ export const Checkout = () => {
   };
 
   return (
-    <div className="product-div-wrapper">
-      <div className="product-info">
-        <p className="p-item">Item</p>
-        <div className="quantity-and-price">
-          <p className="p-quantity">Qty</p>
-          <p className="p-price">Price</p>
-        </div>
-      </div>
+    <>
+      {cartItems.length > 0 ? (
+        <div className="product-div-wrapper">
+          <div className="product-info">
+            <p className="p-item">Item</p>
+            <div className="quantity-and-price">
+              <p className="p-quantity">Qty</p>
+              <p className="p-price">Price</p>
+            </div>
+          </div>
 
-      {cartItems.map((item) => (
-        <CheckoutItem key={item.id} {...item} />
-      ))}
+          {cartItems.map((item) => (
+            <CheckoutItem key={item.id} {...item} />
+          ))}
 
-      <div className="payment-div">
-        <div className="total-payment-div">
-          <p className="total-p">
-            Total:{" "}
-            {formatCurrency(
-              cartItems.reduce((total, cartItem) => {
-                const item = books.find((book) => book.id == cartItem.id);
-                return total + (item?.price || 0) * cartItem.quantity;
-              }, 0)
-            )}
-          </p>
-          <button
-            type="submit"
-            onClick={handleCheckout}
-            className="checkout-btn"
-          >
-            CHECKOUT
-          </button>
+          <div className="payment-div">
+            <div className="total-payment-div">
+              <p className="total-p">
+                Total:{" "}
+                {formatCurrency(
+                  cartItems.reduce((total, cartItem) => {
+                    const item = books.find((book) => book.id == cartItem.id);
+                    return total + (item?.price || 0) * cartItem.quantity;
+                  }, 0)
+                )}
+              </p>
+              <button
+                type="submit"
+                onClick={handleCheckout}
+                className="checkout-btn"
+              >
+                CHECKOUT
+              </button>
+            </div>
+            <div className="stripe">
+              <img src={StripeIMG} alt="" />
+            </div>
+          </div>
         </div>
-        <div className="stripe">
-          <img src={StripeIMG} alt="" />
+      ) : (
+        <div className="empty-shoppingcart-div">
+          <h1>Shopping Cart</h1>
+          <p>Your cart is empty</p>
+          <Link to="/store/1">
+            <button>CONTINUE SHOPPING</button>
+          </Link>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };

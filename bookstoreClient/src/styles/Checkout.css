@@ -129,3 +129,32 @@
     margin: 0;
   }
 }
+.empty-shoppingcart-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.empty-shoppingcart-div p,
+.empty-shoppingcart-div h1 {
+  color: black;
+}
+.empty-shoppingcart-div button {
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+}
+.empty-shoppingcart-div button:hover {
+  background-color: gray;
+  cursor: pointer;
+  color: black;
+}
+.empty-shoppingcart-div p {
+  font-size: 1.4em;
+}
