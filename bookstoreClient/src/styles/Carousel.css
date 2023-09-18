@@ -5,7 +5,6 @@
 }
 .carousel-img:hover {
   transform: scale(1.2);
-  letter-spacing: 0.2em;
   cursor: pointer;
 }
 
